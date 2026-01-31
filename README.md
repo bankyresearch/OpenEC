@@ -152,12 +152,7 @@ provider.register_fetcher("SalesHistorical", ShopifyProductsFetcher())
 | Plugin Discovery | setuptools entry_points |
 | Data Processing | pandas |
 
-## Reference Links
 
-- [OpenBB Platform](https://github.com/OpenBB-finance/OpenBB) - Inspiration for architecture and design patterns
-- [OpenBB Website](https://openbb.co/) - Reference for product and UX approach
-- [OpenBB Agents](https://github.com/OpenBB-finance/agents-for-openbb) - Reference for AI agent integration
-- [OpenBB Finance GitHub](https://github.com/OpenBB-finance/) - Organization reference
 
 ## License
 
