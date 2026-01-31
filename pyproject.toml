@@ -1,0 +1,66 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "openec-platform"
+version = "0.1.0"
+description = "OpenEC - Open Source AI-Powered Ecommerce & Retail Analytics Platform"
+authors = ["Banky Research <bankyresearch@users.noreply.github.com>"]
+license = "AGPL-3.0"
+readme = "README.md"
+homepage = "https://github.com/bankyresearch/openEC"
+repository = "https://github.com/bankyresearch/openEC"
+keywords = ["ecommerce", "retail", "analytics", "ai", "open-source"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Office/Business :: Financial :: Point-of-Sale",
+    "Operating System :: OS Independent",
+]
+packages = [
+    { include = "openec_platform" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+fastapi = ">=0.111.0"
+uvicorn = ">=0.29.0"
+pydantic = ">=2.0"
+pandas = ">=2.0"
+httpx = ">=0.27.0"
+typer = ">=0.12.0"
+rich = ">=13.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0"
+pytest-asyncio = ">=0.23"
+ruff = ">=0.4"
+mypy = ">=1.10"
+
+[tool.poetry.scripts]
+openec = "openec_cli.main:app"
+
+[tool.poetry.plugins."openec_core_extension"]
+products = "openec_extensions.products:router"
+orders = "openec_extensions.orders:router"
+customers = "openec_extensions.customers:router"
+inventory = "openec_extensions.inventory:router"
+marketing = "openec_extensions.marketing:router"
+analytics = "openec_extensions.analytics:router"
+pricing = "openec_extensions.pricing:router"
+
+[tool.poetry.plugins."openec_core_provider"]
+demo = "openec_providers.demo:provider"
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true

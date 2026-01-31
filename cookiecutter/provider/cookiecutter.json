@@ -1,0 +1,6 @@
+{
+    "provider_name": "my_provider",
+    "description": "A custom OpenEC data provider",
+    "website": "",
+    "credentials": "[]"
+}
