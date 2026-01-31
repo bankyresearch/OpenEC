@@ -1,0 +1,6 @@
+{
+    "extension_name": "my_extension",
+    "model_name": "MyModel",
+    "command_name": "my_command",
+    "description": "A custom OpenEC extension"
+}
