@@ -3,7 +3,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "openec-platform"
+name = "openec"
 version = "0.1.0"
 description = "OpenEC - Open Source AI-Powered Ecommerce & Retail Analytics Platform"
 authors = ["Banky Research <bankyresearch@users.noreply.github.com>"]
@@ -19,7 +19,11 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 packages = [
+    { include = "openec" },
     { include = "openec_platform" },
+    { include = "openec_extensions" },
+    { include = "openec_providers" },
+    { include = "openec_cli" },
 ]
 
 [tool.poetry.dependencies]
