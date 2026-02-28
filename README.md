@@ -2,7 +2,7 @@
 
 **Open Source AI-Powered Ecommerce & Retail Analytics Platform**
 
-OpenEC is a modular, extensible platform for ecommerce and retail data analytics — built for marketers, digital marketers, market analysts, pricing analysts, product managers, and anyone working in ecommerce. Inspired by [OpenBB](https://github.com/OpenBB-finance/OpenBB) for finance, OpenEC brings the same plugin-based, provider-agnostic architecture to the retail and ecommerce domain.
+OpenEC is a modular, extensible platform for ecommerce and retail data analytics — built for marketers, digital marketers, market analysts, pricing analysts, product managers, and anyone working in ecommerce. OpenEC brings the same plugin-based, provider-agnostic architecture to the retail and ecommerce domain.
 
 ---
 
