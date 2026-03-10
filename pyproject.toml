@@ -15,7 +15,7 @@ keywords = ["ecommerce", "retail", "analytics", "ai", "open-source"]
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Science/Research",
-    "Topic :: Office/Business :: Financial :: Point-of-Sale",
+    "Topic :: Office/Business :: Financial",
     "Operating System :: OS Independent",
 ]
 packages = [
