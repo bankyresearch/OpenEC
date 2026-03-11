@@ -4,10 +4,11 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "openec-ui"
-version = "0.1.0"
+version = "0.1.1"
 description = "Web dashboard UI for OpenEC - Ecommerce & Retail Analytics"
 authors = ["Banky Research <bankyresearch@users.noreply.github.com>"]
 license = "AGPL-3.0"
+readme = "README.md"
 homepage = "https://github.com/bankyresearch/OpenEC"
 repository = "https://github.com/bankyresearch/OpenEC"
 keywords = ["ecommerce", "retail", "analytics", "dashboard", "ui"]
